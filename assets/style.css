@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+:root{
+  --text-color: #ffffff;
+  --card-front-color: #A020F0;
+  --card-back-color: #A020F0;
+}
+
+body {
+  background: url(img/bg-desktop-red.webp);
+  font-family: Bai Jamjuree;
+}
