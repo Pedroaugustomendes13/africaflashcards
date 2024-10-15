@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url(img/bg-desktop-red-fotor-202410018227.jpg);
+  background: url(img/images\ \(2\).jpeg);
   font-family: Bai Jamjuree;
 }
 
@@ -16,7 +16,7 @@ body {
   text-align: center;
   height: 100%;
   transform-style: preserve-3d;
-  transition: tranform 600ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 #container {
@@ -57,6 +57,22 @@ body {
   font-weight: 700;
 }
 
+.cartao:hover .cartao__conteudo {
+  transform: rotateY(180deg);
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.cartao__conteudo__resposta{
+  transform:rotateY(180deg)
+}
+
+
 footer {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -70,18 +86,4 @@ footer p {
   text-align: center;
   font-size: 0.6rem;
   margin-top: 0.5rem;
-}
-
-.cartao:hover .cartao__conteudo {
-  transform: rotateY(180deg)
-}
-.cartao__conteudo__pergunta,
-.cartao__conteudo__resposta {
-  backface-visibility: hidden;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}       
-.cartao__conteudo__resposta{
-  transform: rotateY('180deg');
 }
