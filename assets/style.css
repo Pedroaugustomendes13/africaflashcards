@@ -47,7 +47,7 @@ body {
     font-weight: 700;
   }
   footer {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     position: fixed;
     bottom: 0;
@@ -59,10 +59,21 @@ body {
     font-size: 0.6rem;
     margin-top: 0.5rem;
   }
-  .cartao:hover .cartao__conteudo{
-    transform: rotateY('180deg');
-  }
-  .cartao__conteudo{
-    transform-style: preserve-3d;
-    transition: transform 300ms ease-in-out;
-  }
+.cartao.hover .cartao__conteudo{
+  transform: rotateY(180deg)
+}
+.cartao__conteudo{
+  transform-style: preserve-3d;
+  transition: transform 300ms ease-in-out;
+}
+.cartao__conteudo h3{
+backface-visibility: hidden;
+}
+.cartao__conteudo__frente, .cartao__conteudo__verso{
+  backface-visibility: hidden;
+}
+footer p{
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+}
