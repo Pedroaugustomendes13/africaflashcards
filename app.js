@@ -13,5 +13,5 @@ function criaCartao(categoria, pergunta, resposta) {
                 </div > '
 
     let container = document.getElementById('container')
-    container.appendChild(cartao)
+    container.appendChild (cartao)
 }
